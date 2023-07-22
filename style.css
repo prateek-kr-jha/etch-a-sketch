@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* border: 1px solid red; */
+
+}
+
+.header, .footer {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.body {
+    height: 60%;
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+
+.reset{
+    height: 20%;
+    width: 10%;
+    font-size: large;
+    font-weight: bolder;
+}
