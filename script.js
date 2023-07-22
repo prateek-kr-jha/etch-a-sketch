@@ -40,7 +40,18 @@ function changeColor() {
 let number = prompt("Enter grid size");
 drawGrid(number);
 let boxes = document.querySelectorAll(".box");
-console.log(boxes);
 boxes.forEach(box => {
     box.addEventListener("mouseover", colorChange)
+})
+
+let reset = document.querySelector(".reset");
+reset.addEventListener("click", () => {
+    let grid_container = document.querySelector(".grid-container");
+    grid_container.innerHTML = "";
+    let number = prompt("Enter grid size");
+    drawGrid(number);
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => {
+        box.addEventListener("mouseover", colorChange)
+    })
 })
